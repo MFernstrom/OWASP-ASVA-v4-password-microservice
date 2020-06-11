@@ -4,7 +4,7 @@ program ASVAv4PasswordMicroservice;
   Version     1.0
   Copyright   2020, Marcus Fernstrom
   License     MIT License
-  GitHub
+  GitHub      https://github.com/MFernstrom/OWASP-ASVA-v4-password-microservice
   About       Implements 2.1.1 and 2.1.7 of the OWASP ASVA v.4 guide
 }
 
