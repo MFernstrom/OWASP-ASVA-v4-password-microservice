@@ -1,4 +1,4 @@
 src/lib*
 src/backup/*
-src/bin/ASVAv4PasswordMicroservice
+src/bin/x86*
 .DS_Store
