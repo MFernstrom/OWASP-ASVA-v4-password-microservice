@@ -1,4 +1,4 @@
-# OWASP-ASVA-v4-password-microservice
+# OWASP ASVA v4 Password Microservice
 
 To quote the page itself [OWASP ASVA](https://owasp.org/www-project-application-security-verification-standard/): The OWASP Application Security Verification Standard (ASVS) Project provides a basis for testing web application technical security controls and also provides developers with a list of requirements for secure development.
 
@@ -28,7 +28,7 @@ The default port is 9080. You can change what port the service listens to by add
 Example: `./x86_64-linux-ASVAv4PasswordMicroservice 6000` to run on port 6000.
 
 ## Accessing the service
-Endpoint is available at `/api/password` on port `9080` by default. Example `http://localhost:9080/api/password` by making an HTTP FORM POST with a form key 'password' and the password to check as the value.
+Endpoint is available at `/api/password` on port `9080` by default. Example `http://localhost:9080/api/password` by making an HTTP FORM POST with a form key `password` and the password to check as the value.
 
 # Building it
 Built with versions
