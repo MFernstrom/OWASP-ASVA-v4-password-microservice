@@ -1,4 +1,5 @@
 src/lib*
 src/backup/*
 src/bin/x86*
+src/bin/*.zip
 .DS_Store
