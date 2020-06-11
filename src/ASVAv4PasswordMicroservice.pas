@@ -1,12 +1,12 @@
-program ASVAv4PasswordMicroservice;
-
 {
-  Version     1.0
+  Version     1.1
   Copyright   2020, Marcus Fernstrom
   License     MIT License
   GitHub      https://github.com/MFernstrom/OWASP-ASVA-v4-password-microservice
   About       Implements 2.1.1 and 2.1.7 of the OWASP ASVA v.4 guide
 }
+
+program ASVAv4PasswordMicroservice;
 
 {$mode objfpc}{$H+}
 
@@ -58,7 +58,11 @@ begin
   Top10KPasswords := TStringList.Create;
   Top10KPasswords.LoadFromFile(ExtractFilePath(ParamStr(0)) + 'top10000passwords.txt');
 
-  Application.Port := 9080;
+  if ParamCount = 1 then
+    Application.Port := StrToInt(ParamStr(1))
+  else
+    Application.Port := 9080;
+
   HTTPRouter.RegisterRoute('/api/password', rmPost, @passwordCheckEndpoint);
   Application.Threaded := True;
   Application.Initialize;
